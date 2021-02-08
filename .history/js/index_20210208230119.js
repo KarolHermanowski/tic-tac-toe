@@ -5,7 +5,6 @@ const p2 = "player2";
 
 let player = p1
 const targets = new Array;
-const pointsTable = new Array;
 
 document.addEventListener("click", e => {
     if(targets.includes(e.target) == false){
@@ -21,11 +20,5 @@ document.addEventListener("click", e => {
             targets.push(e.target)
         }
     }
-    gameboard.childNodes.forEach(child => {
-        child.childNodes.forEach(item => {
-            item.childNodes.forEach(el => {
-                 console.log(el);
-            });
-        });
-    });
-});
+})
+console.log(gameboard);

@@ -23,9 +23,12 @@ document.addEventListener("click", e => {
     }
     gameboard.childNodes.forEach(child => {
         child.childNodes.forEach(item => {
+            console.log(item);
             item.childNodes.forEach(el => {
                  console.log(el);
-            });
+        });
+
+
         });
     });
 });

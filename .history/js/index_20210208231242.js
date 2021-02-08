@@ -22,10 +22,13 @@ document.addEventListener("click", e => {
         }
     }
     gameboard.childNodes.forEach(child => {
-        child.childNodes.forEach(item => {
-            item.childNodes.forEach(el => {
-                 console.log(el);
-            });
-        });
+        console.log(child);
+        // child.childNodes.forEach(item => {
+        //     item.childNodes.forEach(el => {
+        //         console.log(el);
+        //     });
+
+
+        // });
     });
 });

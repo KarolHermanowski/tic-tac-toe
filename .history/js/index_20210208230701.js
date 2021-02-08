@@ -21,11 +21,8 @@ document.addEventListener("click", e => {
             targets.push(e.target)
         }
     }
-    gameboard.childNodes.forEach(child => {
-        child.childNodes.forEach(item => {
-            item.childNodes.forEach(el => {
-                 console.log(el);
-            });
-        });
+    gameboard.forEach(item => {
+        // pointsTable.push(new Array);
+        console.log(item);
     });
 });
