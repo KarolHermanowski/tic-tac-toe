@@ -15,7 +15,7 @@ document.addEventListener("click", e => {
             }
             else if(player == p2){
                 e.target.classList.add("circle");
-                player = p1;
+                playuer = p1;
             }
             targets.push(e.target)
         }
