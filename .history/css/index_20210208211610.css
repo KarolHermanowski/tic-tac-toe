@@ -47,10 +47,9 @@ h1{
 }
 
 .circle{
-    width: 70%;
-    height: 70%;
-    border: 5px solid #FFF;
-    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    border: 5px soli #FFF;
 }
 
 .cross{

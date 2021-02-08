@@ -47,10 +47,7 @@ h1{
 }
 
 .circle{
-    width: 70%;
-    height: 70%;
-    border: 5px solid #FFF;
-    border-radius: 50%;
+
 }
 
 .cross{
@@ -63,9 +60,7 @@ h1{
 
 .cross::after{
     content: "";
-    position: absolute;
-    border-top: 5px solid #FFF;
-    transform: translate(-100%) translateY(46%);
+    background-color: white;
     width: 100%;
     height: 100%;
 }

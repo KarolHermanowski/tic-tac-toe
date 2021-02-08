@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: dimgray;
+    text-align: center;
+}
+
+h1{
+    padding: 20px;
+}
+
+.wrap{
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+}
+
+.gameboard{
+    width: 600px;
+    height: 600px;
+    background-color: #000;
+    margin: auto;
+}
+
+.area{
+    display: flex;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+}
+
+.rightBorder{
+    border-right: 5px solid #FFF;
+}
+
+.topBorder{
+    border-top: 5px solid #FFF;
+}
