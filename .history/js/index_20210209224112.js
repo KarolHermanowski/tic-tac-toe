@@ -47,12 +47,13 @@ document.addEventListener("click", e => {
 
     scoreBoard.forEach(element => {
         element.forEach(el => {
-            if(document.querySelector(el).classList.Contains(searchFor)){
-                isWinner = true;
-            }
-            else{
-                isWinner = false;
-            }
+            console.log(el);
+            // if(el.indexOf(searchFor) > 0){
+            //     isWinner = true;
+            // }
+            // else{
+            //     isWinner = false;
+            // }
         });
 
         // for (let i = 0; i < scoreBoard.length; i++){

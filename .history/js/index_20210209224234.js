@@ -47,7 +47,8 @@ document.addEventListener("click", e => {
 
     scoreBoard.forEach(element => {
         element.forEach(el => {
-            if(document.querySelector(el).classList.Contains(searchFor)){
+            console.log(el);
+            if(el.target.classList.Contains(searchFor)){
                 isWinner = true;
             }
             else{

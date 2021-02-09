@@ -43,11 +43,11 @@ document.addEventListener("click", e => {
         }
     }
 
-
+counter = 0;
 
     scoreBoard.forEach(element => {
-        element.forEach(el => {
-            if(document.querySelector(el).classList.Contains(searchFor)){
+        element/forEach(el => {
+            if(el.search(searchFor)){
                 isWinner = true;
             }
             else{
@@ -55,12 +55,8 @@ document.addEventListener("click", e => {
             }
         });
 
-        // for (let i = 0; i < scoreBoard.length; i++){
 
-        // }
     });
-console.log(isWinner);
-
 
     console.log(isWinner);
 
