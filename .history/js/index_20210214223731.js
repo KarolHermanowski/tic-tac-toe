@@ -8,7 +8,7 @@ let searchFor;
 const isWinner = false;
 
 const pointsTable = new Array;
-const scoreBoard = new Array;
+const scoreBoard = new Array(3);
 
 let marks;
 let counter;
@@ -18,50 +18,41 @@ let counter;
 const circleClass = "circle";
 const crossClass = "cross";
 const markClass = "mark";
-const noPointerClass = "noPointer";
 
-const getClassList = () => {
+const getClassList = () =>{
     const targets = document.querySelectorAll(`.${markClass}`);
     targets.forEach(target => {
-        const {
-            classList
-        } = target;
-        if (classList.contains(circleClass)) scoreBoard.push(circleClass);
-        else if (classList.contains(crossClass)) scoreBoard.push(crossClass);
-        else scoreBoard.push("0");
+        const {classList} = target;
+        console.log(classList);
     });
-    return scoreBoard;
 }
 
-const addClass = (target) => {
-    if (player = p1) target.addClass(crossClass);
-    else target.addClass(circleClass);
-}
+getClassList();
 
 
 document.addEventListener("click", e => {
-    if (e.target.classList.contains(circleClass) == false && e.target.classList.contains(crossClass) == false) {
-        if (e.target.classList.contains(markClass)) {
-            if (player == p1) {
-                e.target.classList.add(crossClass);
-                e.target.classList.add(noPointerClass);
-                player = p2;
-                searchFor = crossClass;
-            } else if (player == p2) {
-                e.target.classList.add(circleClass);
-                e.target.classList.add(noPointerClass);
-                player = p1;
-                searchFor = circleClass;
-            }
-        }
-    }
-});
 
 
 
 
 
-//
+
+
+//     if(targets.includes(e.target) == false){
+//         if (e.target.classList.contains(mark)){
+//             if (player == p1) {
+//                 e.target.classList.add(cross);
+//                 player = p2;
+//                 searchFor = cross;
+//             }
+//             else if(player == p2){
+//                 e.target.classList.add(cricle);
+//                 player = p1;
+//                 searchFor = circle;
+//             }
+//             targets.push(e.target)
+//         }
+//     }
 
 //     marks = document.querySelectorAll(mark);
 //     counter = 0;
@@ -94,3 +85,6 @@ document.addEventListener("click", e => {
 
 
 // console.log(isWinner);
+
+});
+

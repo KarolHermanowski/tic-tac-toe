@@ -18,7 +18,6 @@ let counter;
 const circleClass = "circle";
 const crossClass = "cross";
 const markClass = "mark";
-const noPointerClass = "noPointer";
 
 const getClassList = () => {
     const targets = document.querySelectorAll(`.${markClass}`);
@@ -40,18 +39,16 @@ const addClass = (target) => {
 
 
 document.addEventListener("click", e => {
-    if (e.target.classList.contains(circleClass) == false && e.target.classList.contains(crossClass) == false) {
-        if (e.target.classList.contains(markClass)) {
+    if (e.target.classList.contains(circleClass) == False && e.target.classList.contains(crossClass) == False) {
+        if (e.target.classList.contains(markClass) && ) {
             if (player == p1) {
-                e.target.classList.add(crossClass);
-                e.target.classList.add(noPointerClass);
+                e.target.classList.add(cross);
                 player = p2;
-                searchFor = crossClass;
+                searchFor = cross;
             } else if (player == p2) {
-                e.target.classList.add(circleClass);
-                e.target.classList.add(noPointerClass);
+                e.target.classList.add(cricle);
                 player = p1;
-                searchFor = circleClass;
+                searchFor = circle;
             }
         }
     }

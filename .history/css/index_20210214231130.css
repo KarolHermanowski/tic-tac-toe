@@ -46,11 +46,7 @@ h1{
 .mark{
     width: 100%;
     height: 100%;
-    cursor: pointer;
-}
-
-.noPointer{
-    cursor: default;
+    cursor: potner;
 }
 
 .rightBorder{

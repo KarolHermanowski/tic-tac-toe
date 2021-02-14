@@ -50,7 +50,7 @@ h1{
 }
 
 .noPointer{
-    cursor: default;
+    cursor: auto;
 }
 
 .rightBorder{

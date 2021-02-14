@@ -49,10 +49,6 @@ h1{
     cursor: pointer;
 }
 
-.noPointer{
-    cursor: default;
-}
-
 .rightBorder{
     border-right: 5px solid #FFF;
 }
